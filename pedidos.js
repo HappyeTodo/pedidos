@@ -15,13 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
         let inputNome = document.getElementById('nome').value
         let inputNfe = document.getElementById('nf').value
         let inputTdlHb = document.getElementById('tdl-hb').value
+        let inputPagamento = document.getElementById('pagamento').value
     
         let linha = '<tr>';
         linha += `<td>${inputPedido}</td>`;
         linha += `<td>${inputCodCliente}</td>`;
         linha += `<td>${inputNome}</td>`;
+        linha += `<td>${inputPagamento}</td>`;
         linha += `<td>${inputNfe}</td>`;
-        linha += `<td>${inputTdlHb}</td>`;
+        linha += `<td class="tdl-ou-hb">${inputTdlHb}</td>`;
         linha += `</tr>`;
     
         linhas += linha;
