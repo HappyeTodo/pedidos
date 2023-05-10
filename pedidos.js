@@ -3,10 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('formulario')
     let linhas = ' '
 
+
     form.addEventListener('submit', function(e){
         e.preventDefault();
         adicionaNome();
         atualizaTabela();
+        let inputTdlHb = document.getElementById('tdl-hb').value
         
     })
     function adicionaNome (){
@@ -17,17 +19,25 @@ document.addEventListener('DOMContentLoaded', function() {
         let inputTdlHb = document.getElementById('tdl-hb').value
         let inputPagamento = document.getElementById('pagamento').value
     
-        let linha = '<tr>';
+        let linha = '<tr id="oi">';
         linha += `<td>${inputPedido}</td>`;
         linha += `<td>${inputCodCliente}</td>`;
         linha += `<td>${inputNome}</td>`;
         linha += `<td>${inputPagamento}</td>`;
         linha += `<td>${inputNfe}</td>`;
-        linha += `<td class="tdl-ou-hb">${inputTdlHb}</td>`;
+        linha += `<td id="tdl-ou-hb">${inputTdlHb}</td>`;
+        linha += `<td style="background-color:#fff"><input type="checkbox">Check`
+        linha += `<td style="background-color:#fff"><input type="checkbox">Check`
         linha += `</tr>`;
     
         linhas += linha;
     }
+
+    const linhaCheck = document.getElementById('tdl-ou-hb')
+    linhaCheck.addEventListener('onclick', function(e){
+        alert('oi')
+    })
+
     
     
     function atualizaTabela(){
