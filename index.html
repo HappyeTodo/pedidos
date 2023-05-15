@@ -4,104 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        .container__content{
-            max-width: 1280px ;
-            margin: 0 auto;
-        }
-
-        form {
-            max-width: 1280px;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-        }
-
-        form input {
-            margin-right: 12px;
-        }
-
-        table {
-            max-width: 1280px;
-            width: 100%;
-            margin-top: 48px;
-            margin-bottom: 48px;
-        }
-
-        th {
-            background-color: rgb(161, 247, 69);
-            padding: 3px;
-        }
-        td {
-            background-color:  rgb(212, 247, 174);
-        }
-        button {
-            margin-left: 120px;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-top: 2px;
-        }
-        .checkbox {
-            background-color: none;
-        }
-
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Menu</title>
 </head>
 <body>
-    <div class="container__content">
-        <form id="formulario">
-            <div class="block">
-                <label for="pedido">Pedido:</label>
-                <input id="pedido" type="text">
+    <div class="content">
+        <header>
+            <h1>
+                Sistema de pedidos diários
+            </h1>
+        </header>
+        <div class="container">
+            <div class="paragrafo">
+                <p>
+                    Selecione a planilha desejada
+                </p>
             </div>
-            <div class="block">
-                <label for="cliente">Cód.Cliente</label>
-                <input id="cliente" type="text">
+            <div class="images">
+                <a href="./todolivro.html">
+                    <img class="tdl-img" src="./tdl.png" alt="">
+                </a>
+                <a href="./happybooks.html">
+                    <img class="tdl-img" src="./logo.svg" alt="">
+                </a>
             </div>
-            <div class="block">
-                <label for="nome">Nome</label>
-                <input id="nome" type="text">
-            </div>
-            <div class="block">
-                <label for="pagamento">Pagamento</label>
-                <input id="pagamento" type="text">
-            </div>
-            <div class="block">
-                <label for="nf">Nf-E</label>
-                <input id="nf" type="text">
-            </div>
-            <div class="block">
-                <label for="tdl-hb">TDL ou HB</label>
-                <input id="tdl-hb" type="text">
-            </div>
-                <button id="botao-form" class="btn">Salvar</button>
-        </form>
-        <table>
-            <thead>
-                <tr>
-                    <th>Pedido</th>
-                    <th>Cliente</th>
-                    <th>Nome</th>
-                    <th>Pagamento</th>
-                    <th>Nota Fiscal</th>
-                    <th>TDL ou HB</th>
-                    <th>Imp</th>
-                    <th>Rq</th>
-                </tr>
-            </thead>
-            <tbody id="corpo-tabela">
-            </tbody>
-        </table>
+        </div>
     </div>
-
-    <script src="./pedidos.js"></script>
 </body>
 </html>

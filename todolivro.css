@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container__content{
+    max-width: 1280px ;
+    margin: 0 auto;
+}
+
+form {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    margin-right: 12px;
+}
+
+table {
+    max-width: 1280px;
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+th {
+    background-color: #1f509f;
+    padding: 3px;
+    color: #fff;
+}
+td {
+    background-color:  #1f509f70
+}
+button {
+    margin-left: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2px;
+}
+.checkbox {
+    background-color: none;
+}

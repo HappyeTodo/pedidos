@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolivro.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container__content">
+        <form id="formulario">
+            <div class="block">
+                <label for="pedido">Pedido:</label>
+                <input id="pedido" type="text">
+            </div>
+            <div class="block">
+                <label for="cliente">Cód.Cliente</label>
+                <input id="cliente" type="text">
+            </div>
+            <div class="block">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text">
+            </div>
+            <div class="block">
+                <label for="pagamento">Pagamento</label>
+                <input id="pagamento" type="text">
+            </div>
+            <div class="block">
+                <label for="nf">Nf-E</label>
+                <input id="nf" type="text">
+            </div>
+            <div class="block">
+                <label for="tdl-hb">TDL ou HB</label>
+                <input id="tdl-hb" type="text">
+            </div>
+                <button id="botao-form" class="btn">Salvar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pedido</th>
+                    <th>Cliente</th>
+                    <th>Nome</th>
+                    <th>Pagamento</th>
+                    <th>Nota Fiscal</th>
+                    <th>TDL</th>
+                    <th>Imp</th>
+                    <th>Rq</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabela">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./todolivro.js"></script>
+</body>
+</html>
